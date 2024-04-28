@@ -1,0 +1,90 @@
+@charset:"UTF-8";
+:root{
+	--verdeclaro:hsl(75, 94%, 57%);
+	--branco:hsl(0, 0%, 100%);
+	--cinza:hsl(0, 0%, 20%);
+	--cinzaescuro:hsl(0, 0%, 12%);
+	--brancooff:hsl(0, 0%, 8%);
+}
+@font-face{
+	font-family:inter;
+	src:url(..fontes/Inter-VariableFont_slnt,wght.ttf);
+}
+@font-face{
+	font-family:InterBold;
+	src:url(..fontes/Inter-Bold.ttf);
+}
+@font-face{
+	font-family:InterRegular;
+	src:url(..fontes/Inter-Regular.ttf);
+}
+@font-face{
+	font-family:InterSemiBold;
+	src:url(..fontes/Inter-SemiBold.ttf);
+}
+body{
+	background-color:var(--brancooff);
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	height:85vh;
+}
+main{
+	background-color:var(--cinzaescuro);
+	border-radius:10px;
+	height: 520px;
+  width: 320px;
+  margin-top:18px;
+}
+.avatar{
+	height:91px;
+	width:91px;
+	border-radius:100px;
+	display:block;
+	margin:8px auto;
+}
+h1{
+	text-align:center;
+	color:white;
+	font-size:26px;
+	font-family:InterSemiBold;
+}
+h2{
+	font-size:16px;
+	color:var(--verdeclaro);
+	text-align:center;
+	font-family:InterBold;
+}
+p{
+	font-size:14px;
+	color:white;
+	text-align:center;
+	font-family:InterRegular;
+	padding:0px 7px;
+}
+.botao{
+	background-color:var(--cinza);
+	padding:10px;
+	height:20px;
+	width:250px;
+	border-radius:10px;
+	text-align:center;
+	display:block;
+	margin:0px auto 15px auto;
+}
+a{
+	background-color:transparent;
+	color:white;
+	font-family:InterBold;
+	text-decoration:none;
+}
+.botao:hover{
+	background-color:var(--verdeclaro);
+	color:black;
+	transition-duration:0.25s;
+	a{
+		background-color:var(--verdeclaro);
+		color:black;
+		transition-duration:0.25s;
+	}
+}
